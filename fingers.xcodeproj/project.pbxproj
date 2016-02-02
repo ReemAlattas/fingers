@@ -14,6 +14,7 @@
 		526C085A1C5EEDA6009561EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C08581C5EEDA6009561EB /* LaunchScreen.storyboard */; };
 		526C08651C5EEDA6009561EB /* fingersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08641C5EEDA6009561EB /* fingersTests.swift */; };
 		526C08701C5EEDA6009561EB /* fingersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C086F1C5EEDA6009561EB /* fingersUITests.swift */; };
+		52EEE2901C5EF515009FCBF7 /* hand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52EEE28F1C5EF515009FCBF7 /* hand.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		526C086B1C5EEDA6009561EB /* fingersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fingersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526C086F1C5EEDA6009561EB /* fingersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fingersUITests.swift; sourceTree = "<group>"; };
 		526C08711C5EEDA6009561EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EEE28F1C5EF515009FCBF7 /* hand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hand.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				526C08531C5EEDA6009561EB /* Main.storyboard */,
 				526C08561C5EEDA6009561EB /* Assets.xcassets */,
 				526C08581C5EEDA6009561EB /* LaunchScreen.storyboard */,
+				52EEE28F1C5EF515009FCBF7 /* hand.jpg */,
 				526C085B1C5EEDA6009561EB /* Info.plist */,
 			);
 			path = fingers;
@@ -234,6 +237,7 @@
 			files = (
 				526C085A1C5EEDA6009561EB /* LaunchScreen.storyboard in Resources */,
 				526C08571C5EEDA6009561EB /* Assets.xcassets in Resources */,
+				52EEE2901C5EF515009FCBF7 /* hand.jpg in Resources */,
 				526C08551C5EEDA6009561EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				526C08761C5EEDA6009561EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526C08771C5EEDA6009561EB /* Build configuration list for PBXNativeTarget "fingersTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				526C08791C5EEDA6009561EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526C087A1C5EEDA6009561EB /* Build configuration list for PBXNativeTarget "fingersUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				526C087C1C5EEDA6009561EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

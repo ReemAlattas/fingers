@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fingers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How Many Fingers?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPW-gp-mCh">
+                                <rect key="frame" x="24" y="101" width="285" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Ohb-SV-uC2"/>
+                                    <constraint firstAttribute="width" constant="285" id="Pe9-wf-xLr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How many fingers do you think I am holding up?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onV-fk-aZM">
+                                <rect key="frame" x="24" y="160" width="285" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Q6U-V7-ptO"/>
+                                    <constraint firstAttribute="width" constant="285" id="iGl-U0-x9G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bz-l5-ZRC">
+                                <rect key="frame" x="118" y="229" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BV1-1r-xQp"/>
+                                    <constraint firstAttribute="width" constant="97" id="aU3-mY-8In"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Bir-OD-cUB"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSk-cJ-2cK">
+                                <rect key="frame" x="142" y="285" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="SC6-Jx-6Ea"/>
+                                    <constraint firstAttribute="height" constant="30" id="vsB-ng-lAx"/>
+                                </constraints>
+                                <state key="normal" title="Guess!"/>
+                                <connections>
+                                    <action selector="guessBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTN-a0-amf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwB-mD-e3t">
+                                <rect key="frame" x="-17" y="340" width="366" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="Uu0-SY-ekX"/>
+                                    <constraint firstAttribute="height" constant="21" id="jKs-Oa-LsO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hand.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-TJ-Fc4">
+                                <rect key="frame" x="67" y="404" width="199" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="8YK-CE-T0m"/>
+                                    <constraint firstAttribute="height" constant="150" id="NOQ-mL-FvF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2bz-l5-ZRC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5p1-MC-O4P"/>
+                            <constraint firstItem="VSk-cJ-2cK" firstAttribute="top" secondItem="2bz-l5-ZRC" secondAttribute="bottom" constant="26" id="6Zt-0h-flR"/>
+                            <constraint firstItem="onV-fk-aZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Bb-NZ-HM4"/>
+                            <constraint firstItem="s4t-TJ-Fc4" firstAttribute="top" secondItem="vwB-mD-e3t" secondAttribute="bottom" constant="43" id="9GV-OO-6oE"/>
+                            <constraint firstItem="onV-fk-aZM" firstAttribute="top" secondItem="KPW-gp-mCh" secondAttribute="bottom" constant="13" id="JZt-XW-rpe"/>
+                            <constraint firstItem="KPW-gp-mCh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LqQ-Kl-KVH"/>
+                            <constraint firstItem="KPW-gp-mCh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="TZt-vT-lep"/>
+                            <constraint firstItem="2bz-l5-ZRC" firstAttribute="top" secondItem="onV-fk-aZM" secondAttribute="bottom" constant="13" id="dHU-2P-xFk"/>
+                            <constraint firstItem="VSk-cJ-2cK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1d-3j-OZJ"/>
+                            <constraint firstItem="vwB-mD-e3t" firstAttribute="top" secondItem="VSk-cJ-2cK" secondAttribute="bottom" constant="25" id="sBY-CN-5Dl"/>
+                            <constraint firstItem="vwB-mD-e3t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLA-Yy-rRu"/>
+                            <constraint firstItem="s4t-TJ-Fc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOo-0E-Pgz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guess" destination="2bz-l5-ZRC" id="gUq-Px-QAQ"/>
+                        <outlet property="result" destination="vwB-mD-e3t" id="wXe-1x-lLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand.jpg" width="297" height="420"/>
+    </resources>
 </document>
